@@ -1,0 +1,40 @@
+header {
+    nav {
+        div {
+            @media @mobile {
+                border-bottom: 1px solid black;
+            }  
+        }
+        
+        background-color: lightgray;
+        .links {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 2rem;
+            padding: 2%;
+            
+        }
+        a {
+            text-decoration: none;
+            padding: 0 7%;
+        }
+        @media @mobile {
+            background-color: white;
+            a {
+                display: flex;
+                flex-direction: column;
+                margin: 15%;
+                text-decoration: underline;
+            }
+        }
+        @media @tablet {
+            a {
+                text-decoration: underline;
+                padding: 0 5%;
+            }
+
+        }
+        
+    }
+    
+}
