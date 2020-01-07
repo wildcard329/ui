@@ -1,38 +1,39 @@
 header {
     nav {
+        background-color: lightgray;
+        padding: 2% 0;
+        @media @mobile {
+            background-color: white;
+        }  
+
         div {
             @media @mobile {
                 border-bottom: 1px solid black;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10%;
             }  
         }
-        
-        background-color: lightgray;
+
         .links {
             margin: 0 auto;
             text-align: center;
             font-size: 2rem;
-            padding: 2%;
-            
+            display: flex;
+            justify-content: space-evenly;
         }
         a {
             text-decoration: none;
-            padding: 0 7%;
-        }
-        @media @mobile {
-            background-color: white;
-            a {
+            @media @mobile {
                 display: flex;
                 flex-direction: column;
-                margin: 15%;
-                text-decoration: underline;
+                text-decoration: none;
+            } 
+            @media @tablet {
+                text-decoration: none;
             }
-        }
-        @media @tablet {
-            a {
-                text-decoration: underline;
-                padding: 0 5%;
-            }
-
         }
         
     }
