@@ -1,0 +1,207 @@
+#hp_1 {
+    display: flex;
+    
+    @media @mobile {
+        flex-direction: column;
+    }
+    .text {
+        max-width: 100%;
+        font-size: 1.75rem;
+    }
+    .dumbbell {
+        @media @tablet {
+            display: none;
+        }
+        @media @mobile {
+            display: inline;
+        }
+    }
+    div {
+        background-color: lightgray;
+        padding: 2%;
+        max-width: 33.3%;
+        text-align: center;
+        @media @tablet {
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 50%;
+        }
+        img {
+            border-radius: 5%;
+        }
+        @media @mobile {
+            max-width: 100%;
+            flex-direction: column;
+            background-color: white;
+            padding: 5%;
+
+            h3 {
+                padding-top: 5%;
+            }
+            p {
+                padding: 5% 0;
+            }
+        }
+    }
+}
+#hp_2 {
+    background-color: lightgray;
+    @media @mobile {
+        background-color: white;
+    }
+    p {
+        font-size: 2rem;
+        margin: 0 10%;
+        margin-bottom: 5%;
+    }
+    .text {
+            @media @mobile {
+            display: none;
+        }
+    }
+    .image {
+        display: flex;
+        margin: 0 10%;
+        @media @mobile {
+            flex-direction: column;
+        }
+        img {
+            border-radius: 5%;
+            max-width: 40%;
+            @media @mobile {
+                max-width: 100%;
+            }
+        }
+        p {
+            width: 60%;
+            padding: 5%;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            @media @mobile {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        
+    }
+    .cathy {
+        padding-bottom: 5%;
+    }
+    .amy {
+        padding-bottom: 5%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        @media @mobile {
+            flex-direction: column;
+        }
+    }
+    .mike {
+        padding-bottom: 5%;
+        margin-bottom: none;
+    }
+    .container {
+        text-align: center;
+        padding-bottom: 5%;
+        h3 {
+            font-size: 1.75rem;
+        }
+        button {
+            width: 80px;
+            height: 25px;
+            background-color: blue;
+            color: white;
+        }
+    }
+    
+}
+#team {
+    display: flex;
+    @media @mobile {
+        display: inline;
+    }
+    @media @tablet {
+        display: inline;
+    }
+    .left {
+        border-right: 1px solid black;
+        padding-left: 6.5%;
+        @media @mobile {
+            border-right: none;
+            border-bottom: none;
+            padding-top: 10%;
+            flex-direction: column;
+        }
+        @media @tablet {
+            display: flex;
+            text-align: center;
+            border-right: none;
+            padding: 5% 0;
+            border-bottom: 1px dotted black;
+        }
+    }
+    .middle {
+        padding-left: 6.5%;
+        @media @mobile {
+            flex-direction: column;
+        }
+        @media @tablet {
+            display: flex;
+            text-align: center;
+            padding: 5% 0;
+            border-bottom: 1px dotted black;
+        }
+    }
+    .right {
+        border-left: 1px solid black;
+        padding-left: 6.5%;
+        @media @mobile {
+            border-left: none;
+            flex-direction: column;
+        }
+        @media @tablet {
+            display: flex;
+            text-align: center;
+            border-left: none;
+            padding: 5% 0;
+        }
+    }
+    div {
+        background-color: lightgray;
+        width: 100%;
+        @media @mobile {
+            background-color: white;
+            margin: 0 auto;
+            padding-bottom: 10%;
+        }
+        
+        img {
+            width: 75%;
+            border-radius: 5%;
+            @media @mobile {
+                width: 40%;
+            }
+            @media @tablet {
+                width: 45%;
+            }
+        }
+        h3 {
+            padding: 3% 0;
+            @media @mobile {
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+        }
+        p {
+            padding: 3% 0;
+            @media @mobile {
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+        }
+    }
+    
+}
