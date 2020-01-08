@@ -8,12 +8,24 @@
         max-width: 100%;
         font-size: 1.75rem;
     }
+    .dumbbell {
+        @media @tablet {
+            display: none;
+        }
+        @media @mobile {
+            display: inline;
+        }
+    }
     div {
         background-color: lightgray;
         padding: 2%;
         max-width: 33.3%;
         text-align: center;
-        
+        @media @tablet {
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 50%;
+        }
         img {
             border-radius: 5%;
         }
@@ -34,19 +46,72 @@
 }
 #hp_2 {
     background-color: lightgray;
+    @media @mobile {
+        background-color: white;
+    }
     p {
         font-size: 2rem;
         margin: 0 10%;
+        margin-bottom: 5%;
+    }
+    .text {
+            @media @mobile {
+            display: none;
+        }
+    }
+    .image {
+        display: flex;
+        margin: 0 10%;
+        @media @mobile {
+            flex-direction: column;
+        }
+        img {
+            border-radius: 5%;
+            max-width: 40%;
+            @media @mobile {
+                max-width: 100%;
+            }
+        }
+        p {
+            width: 60%;
+            padding: 5%;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            @media @mobile {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        
+    }
+    .cathy {
+        padding-bottom: 5%;
+    }
+    .amy {
+        padding-bottom: 5%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        @media @mobile {
+            flex-direction: column;
+        }
+    }
+    .mike {
+        padding-bottom: 5%;
+        margin-bottom: none;
     }
     .container {
-        display: flex;
-        margin-top: 3%;
-        
-        p {
-            font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 5%;
+        h3 {
+            font-size: 1.75rem;
         }
         button {
-            justify-content: flex-end;
+            width: 80px;
+            height: 25px;
+            background-color: blue;
+            color: white;
         }
     }
     
