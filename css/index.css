@@ -329,12 +329,6 @@ footer {
 #team {
   display: flex;
 }
-#team h3 {
-  font-size: 2rem;
-}
-#team p {
-  font-size: 1.75rem;
-}
 @media (max-width:500px) {
   #team {
     display: inline;
