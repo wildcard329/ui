@@ -106,6 +106,9 @@
         padding-bottom: 5%;
         h3 {
             font-size: 1.75rem;
+            @media @mobile {
+                display: none;
+            }
         }
         button {
             width: 80px;
@@ -118,6 +121,12 @@
 }
 #team {
     display: flex;
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.75rem;
+    }
     @media @mobile {
         display: inline;
     }
@@ -129,7 +138,6 @@
         padding-left: 6.5%;
         @media @mobile {
             border-right: none;
-            border-bottom: none;
             padding-top: 10%;
             flex-direction: column;
         }
@@ -139,6 +147,9 @@
             border-right: none;
             padding: 5% 0;
             border-bottom: 1px dotted black;
+            @media @mobile {
+                border-bottom: none;
+            }
         }
     }
     .middle {
@@ -151,13 +162,15 @@
             text-align: center;
             padding: 5% 0;
             border-bottom: 1px dotted black;
+            @media @mobile {
+                border-bottom: none;
+            }
         }
     }
     .right {
         border-left: 1px solid black;
         padding-left: 6.5%;
         @media @mobile {
-            border-left: none;
             flex-direction: column;
         }
         @media @tablet {

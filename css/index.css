@@ -315,6 +315,11 @@ footer {
 #hp_2 .container h3 {
   font-size: 1.75rem;
 }
+@media (max-width:500px) {
+  #hp_2 .container h3 {
+    display: none;
+  }
+}
 #hp_2 .container button {
   width: 80px;
   height: 25px;
@@ -323,6 +328,12 @@ footer {
 }
 #team {
   display: flex;
+}
+#team h3 {
+  font-size: 2rem;
+}
+#team p {
+  font-size: 1.75rem;
 }
 @media (max-width:500px) {
   #team {
@@ -341,7 +352,6 @@ footer {
 @media (max-width:500px) {
   #team .left {
     border-right: none;
-    border-bottom: none;
     padding-top: 10%;
     flex-direction: column;
   }
@@ -353,6 +363,11 @@ footer {
     border-right: none;
     padding: 5% 0;
     border-bottom: 1px dotted black;
+  }
+}
+@media (max-width:800px) and (max-width:500px) {
+  #team .left {
+    border-bottom: none;
   }
 }
 #team .middle {
@@ -371,13 +386,17 @@ footer {
     border-bottom: 1px dotted black;
   }
 }
+@media (max-width:800px) and (max-width:500px) {
+  #team .middle {
+    border-bottom: none;
+  }
+}
 #team .right {
   border-left: 1px solid black;
   padding-left: 6.5%;
 }
 @media (max-width:500px) {
   #team .right {
-    border-left: none;
     flex-direction: column;
   }
 }
